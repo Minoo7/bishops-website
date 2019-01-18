@@ -1,0 +1,106 @@
+html, body {
+    font-size: 14px;
+    width: device-width;
+	margin: 10px 0 0 0;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #211D1A;
+}
+
+.triple:before {
+    content: "\e92b";
+}
+
+.triple {
+    background: transparent;
+    border: none;
+    font-family: icon;
+    font-size: 2.25em;
+    color: white;
+    margin-left: auto;
+    margin-top: -90px;
+    margin-right: 13px;
+    margin-bottom: 80px;
+    display: block;
+}
+
+@font-face {
+    font-family: icon;
+    src: url(../fonts/icon.woff)
+}
+
+header > img[src*="assets/images/logo.jpg"] {
+    display: block;
+    margin: 0 auto;
+}
+
+img[src*="assets/images/bar.png"] {
+    width: 100%;
+    height: 700px;
+}
+
+@media only screen and (min-width: 1000px) {
+	header > img[src*="assets/images/logo.jpg"] {
+        width: 700px;
+	}
+}
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 052 css*/
+/*[data-u="navigator"]*/ .i {position:absolute;cursor:pointer;color:white;}
+/*[data-u="navigator"]*/ .i .b {fill:#FFFFFF;fill-opacity:0.3;}
+/*[data-u="navigator"]*/ .i:hover .b {fill-opacity:.7;}
+/*[data-u="navigator"]*/ .iav .b {fill-opacity: 1;}
+/*[data-u="navigator"]*/ .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 053 css*/
+.jssora053 {display:block;position:absolute;cursor:pointer;}
+.jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+.jssora053:hover {opacity:.8;}
+.jssora053.jssora053dn {opacity:.5;}
+.jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+
+div.i {
+    width:20px;
+    height:20px;
+}
+
+main > section#jssor_1 {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 380px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+[data-u="slides"] {
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 380px;
+    overflow: hidden;
+}
+
+div[data-u="navigator"] {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
