@@ -9,58 +9,50 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/ScrollMagic.min.js"></script>
-
-    <script src="assets/js/anchor.js"></script>
-    <script src="assets/js/headerlines.js"></script>
-    <script src="assets/js/static-header.js"></script>
+    <!--<script src="assets/js/scripts.js"></script>-->
     <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
     <script src="assets/js/slideshow.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body>
+
+    <!--Header-->
     <header>
         <img src="assets/images/logo.jpg">
         <button class="triple"></button>
     </header>
+
+    <!--Slideshow-->
+    <section id="slideshow">
+        <section data-u="slides">
+            <div><img src="assets/images/bar.png"></div>
+            <div><img src="assets/images/jobb.jpg"></div>
+            <div><img data-u="image" src="assets/images/logo.jpg"></div>
+        </section>
+
+        <!--Bullets-->
+        <div data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="bullet">
+                <svg viewbox="0 0 16000 16000">
+                    <circle cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!--Arrows-->
+        <div class="arrows" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000"><polyline points="11040,1920 4960,8000 11040,14080 "></polyline></svg>
+        </div>
+        <div class="arrows" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000"><polyline points="4960,1920 11040,8000 4960,14080 "></polyline></svg>
+        </div>
+
+        <script type="text/javascript">slideshow();</script>
+    </section>
+    
     <main>
         <img src="assets/images/bar.png">
         <img src="assets/images/jobb.jpg">
-
-        <section id="jssor_1">
-                <!-- Loading Screen -->
-                <!--<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-                </div>-->
-                <section data-u="slides">
-                    <div><img data-u="image" src="assets/images/bar.jpg"></div>
-                    <div><img data-u="image" src="assets/images/jobb.jpg"></div>
-                    <div><img data-u="image" src="assets/images/logo.jpg"></div>
-                </section>h
-                <!-- Bullet Navigator -->
-                <div data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                    <div data-u="prototype" class="i">
-                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                        </svg>
-                    </div>
-                </div>
-                <!-- Arrow Navigator -->
-                <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-                    </svg>
-                </div>
-                <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-                    </svg>
-                </div>
-        </section>
-        <script type="text/javascript">jssor_1_slider_init();</script>
-        <!-- #endregion Jssor Slider End -->
     </main>
 </body>
 </html>

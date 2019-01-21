@@ -1,24 +1,25 @@
-jssor_1_slider_init = function() {
+slideshow = function() {
 
-    var jssor_1_options = {
+    var slideshow_options = {
       //$AutoPlay: 1,
+      $FillMode: 1,
       $Idle: 2000,
       $ArrowNavigatorOptions: {
         $Class: $JssorArrowNavigator$
-      },
+    },
       $BulletNavigatorOptions: {
         $Class: $JssorBulletNavigator$
       }
     };
-    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);     
+    var slideshow_slider = new $JssorSlider$("slideshow", slideshow_options);     
     /*#region responsive code begin*/       
-    var MAX_WIDTH = 980;        
+    //var MAX_WIDTH = 980;
     function ScaleSlider() {
-        var containerElement = jssor_1_slider.$Elmt.parentNode;
+        var containerElement = slideshow_slider.$Elmt.parentNode;
         var containerWidth = containerElement.clientWidth;      
         if (containerWidth) {       
             var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);      
-            jssor_1_slider.$ScaleWidth(expectedWidth);
+            slideshow_slider.$ScaleWidth(expectedWidth);
         }
         else {
             window.setTimeout(ScaleSlider, 30);
