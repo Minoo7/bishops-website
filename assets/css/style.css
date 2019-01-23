@@ -9,6 +9,14 @@ html, body {
     overflow-x: hidden;
 }
 
+main {
+    margin-top: 100px;
+}
+
+footer {
+    
+}
+
 .triple:before {
     content: "\e92b";
 }
