@@ -10,7 +10,7 @@ html {
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
     background-color: #211D1A;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 body {
@@ -25,7 +25,12 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #211D1A;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+}
+
+main {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
 }
 
 /*footer {
@@ -69,27 +74,31 @@ body {
     src: url(../fonts/icon.woff)
 }
 
-header > img[src*="assets/images/logo.jpg"] {
+header img[src*="assets/images/logo.jpg"] {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 9px;
+    width: 700px;
 }
 
-@media only screen and (min-width: 1000px) {
+/*@media only screen and (min-width: 1000px) {
 	header > img[src*="assets/images/logo.jpg"] {
         width: 700px;
 	}
-}
+}*/
 
- /*========= Slideshow ==========*/
+/*========= Slideshow ==========*/
 
 /*Bullets*/
 
 .bullet {
+    margin-left: -5px;
     position: absolute;
     cursor: pointer;
     color: white;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
 }
 .bullet circle {fill:#FFFFFF;fill-opacity:0.3;}
 .bullet:hover circle {fill-opacity:.7;}
@@ -106,7 +115,7 @@ header > img[src*="assets/images/logo.jpg"] {
     top: 0px;
 }
 .arrows:hover {opacity:.8;}
-.arrows polyline {fill:none; stroke:#fff; stroke-width:640; stroke-miterlimit:10;}
+.arrows polyline {fill:none; stroke:#fff; stroke-width:640; stroke-miterlimit:10; right: 50px;}
 .arrows[data-u="arrowleft"] {left: 25px;}
 .arrows[data-u="arrowright"] {right: 25px;}
 
@@ -132,7 +141,7 @@ header > img[src*="assets/images/logo.jpg"] {
 }
 
 [data-u="slides"] img {
-    width: 100%; 
+    width: 79.2%; 
     height: 580px;
 }
 
@@ -142,10 +151,73 @@ div[data-u="navigator"] {
     right: 12px;
 }
 
+/**/
+
+@font-face {
+    font-family: fontawesome;
+    src: url(../fonts/fontawesome.woff2);
+}
+
+@font-face {
+    font-family: futural;
+    src: url(../fonts/FuturaLTPro-Book.ttf);
+}
+
+.places {
+    background-color: rgba(196,22,24,.5);
+    color: #f2cb54;
+    font-family: futural;
+    padding-bottom: 25px;
+}
+.places li {
+    margin-left: 25px;
+    list-style-type: none;
+    margin-top: -17px;
+}
+.places h3 {
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #f2cb54;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.places h4 {
+    display: inline;
+    font-size: 16px;
+    font-family: futural;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.places #b {
+    display: block;
+    margin-top: -28px;
+    margin-bottom: 0px;
+    margin-left: 50%;
+}
+.places i {
+    font-style: normal;
+    font-family: fontawesome;
+    font-size: 18px;
+    text-shadow: -1px -1px 0 #211D1A, 1px -1px 0 #211D1A, -1px 1px 0 #211D1A, 1px 1px 0 #211D1A;
+    padding-right: 10px;
+}
+.places > li > i {
+    margin-left: 0px;
+}
+.arrow {
+    float: right;
+    margin-top: -55px;
+    margin-right: 10px;
+    font-size: 35px !important;
+}
+.arrow:before {
+    content: "\f105"
+}
 /*es*/
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 footer {
@@ -198,7 +270,6 @@ ul {
 [class*=" icon-"], [class^=icon-] {
     font-family: icomoon !important;
     font-style: normal;
-    /*line-height: 0;*/
 }
 
 .icon-2x {
@@ -211,6 +282,14 @@ ul {
 
 .instagram:before {
     content: "\ea92";
+}
+
+.marker:before {
+    content: "\f041";
+}
+
+.phone:before {
+    content: "\f095"
 }
 
 #links > li:last-of-type, li:last-of-type {
@@ -268,10 +347,10 @@ ul {
     padding: 27px 20px;
 }
 .box > li > a:hover span {
-    color: #c41620;
+    color: #c41618;
 }
 
-.box > #platser {
+.box > #resturanger {
     background-image: url(../images/resturang.png);
     background-position: 0% 45%;
 }

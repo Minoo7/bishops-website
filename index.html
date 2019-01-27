@@ -18,44 +18,43 @@
 </head>
 
 <body>
-
     <!--Header-->
     <header>
         <img src="assets/images/logo.jpg">
         <button class="triple"></button>
     </header>
 
-    <!--Slideshow-->
-    <section id="slideshow">
-        <section data-u="slides">
-            <div><img src="assets/images/bar.png"></div>
-            <div><img src="assets/images/jobb.jpg"></div>
-            <div><img data-u="image" src="assets/images/logo.jpg"></div>
+    <main>
+        <!--Slideshow-->
+        <section id="slideshow">
+            <section data-u="slides">
+                <div><img src="assets/images/bar.png"></div>
+                <div><img src="assets/images/jobb.jpg"></div>
+                <div><img data-u="image" src="assets/images/logo.jpg"></div>
+            </section>
+
+            <div data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="bullet">
+                    <svg viewbox="0 0 16000 16000">
+                        <circle cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="arrows" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000"><polyline points="11040,1920 4960,8000 11040,14080 "></polyline></svg>
+            </div>
+            <div class="arrows" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000"><polyline points="4960,1920 11040,8000 4960,14080 "></polyline></svg>
+            </div>
+
+            <script type="text/javascript">slideshow();</script>
         </section>
 
-        <!--Bullets-->
-        <div data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="bullet">
-                <svg viewbox="0 0 16000 16000">
-                    <circle cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!--Arrows-->
-        <div class="arrows" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000"><polyline points="11040,1920 4960,8000 11040,14080 "></polyline></svg>
-        </div>
-        <div class="arrows" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000"><polyline points="4960,1920 11040,8000 4960,14080 "></polyline></svg>
-        </div>
-
-        <script type="text/javascript">slideshow();</script>
-    </section>
-    
-    <main>
+        <!--Box links-->
         <ul class="box">
-            <li id="platser">
-                <a href="/platser">
+            <li id="resturanger">
+                <a href="resturanger.html">
                     <span>HÄR FINNS VI</span>
                 </a>
             </li>
@@ -71,7 +70,7 @@
             </li>
         </ul>
     </main>
-    <!--<iframe src="https://snazzymaps.com/embed/128082" width="100%" height="580px" style="border:none;"></iframe>-->
+
 	<footer>
 		<ul id="links">
 			<li><a href="/Om">Om oss</a></li>
