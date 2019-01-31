@@ -159,24 +159,44 @@ div[data-u="navigator"] {
 }
 
 @font-face {
+    font-family: fontawesome-light;
+    src: url(../fonts/Fontawesome\ Light.otf);
+}
+
+@font-face {
     font-family: futural;
     src: url(../fonts/FuturaLTPro-Book.ttf);
 }
 
+@font-face {
+    font-family: got;
+    src: url(../fonts/got.otf)
+}
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
 .places {
     background-color: rgba(196,22,24,.5);
+    display: block;
     color: #f2cb54;
     font-family: futural;
     padding-bottom: 25px;
 }
-.places li {
+.places div {
     margin-left: 25px;
     list-style-type: none;
     margin-top: -17px;
 }
 .places h3 {
     padding-top: 20px;
-    margin-bottom: 0;
+    margin-left: 25px;
     color: #f2cb54;
     font-style: italic;
     font-size: 18px;
@@ -202,18 +222,30 @@ div[data-u="navigator"] {
     text-shadow: -1px -1px 0 #211D1A, 1px -1px 0 #211D1A, -1px 1px 0 #211D1A, 1px 1px 0 #211D1A;
     padding-right: 10px;
 }
-.places > li > i {
+.places > div > i {
     margin-left: 0px;
 }
+.places p {
+    font-family: got;
+    font-size: 24px;
+}
+.places li {
+    list-style-type: none;
+    display: inline;
+}
+.places ul {
+    float: right;
+    display: inline;
+    margin-right: 1000px;
+}
+
 .arrow {
     float: right;
     margin-top: -55px;
     margin-right: 10px;
     font-size: 35px !important;
 }
-.arrow:before {
-    content: "\f105"
-}
+
 /*es*/
 
 a {
@@ -289,7 +321,22 @@ ul {
 }
 
 .phone:before {
-    content: "\f095"
+    content: "\f095";
+}
+
+.clock:before {
+    content: "\f017";
+}
+.arrow:before {
+    content: "\f105";
+}
+.arrowdown:before {
+    content: "\f107";
+}
+
+.fork:before {
+    font-family: fontawesome-light;
+    content: "\f2e7";
 }
 
 #links > li:last-of-type, li:last-of-type {

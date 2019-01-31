@@ -9,9 +9,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--<script src="assets/js/scripts.js"></script>-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<script src="assets/js/scripts.js"></script>
     <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
-    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/slideshow.js"></script>-->
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,22 +34,36 @@
         <!--<a href="#go"><p style="padding-bottom: 1000px;">go</p></a>
         <p id="go">header</p>-->
 
-        <div class="places">
-            <li>
-                <h3>BISHOPS ARMS Bellmansgatan</h3>
+        <a onclick="showbishops()" class="places">
+            <h3>BISHOPS ARMS Bellmansgatan</h3>
+            <i class="arrow"></i>
+            <div>
                 <h4><i class="marker"></i>Bellmansgatan 12, Stockholm</h4>
                 <h4 id="b"><i class="phone"></i>08-55 69 21 18</h4>
-                <i class="arrow"></i>
-            </li>
-        </div>
-        <div class="places">
+            
+                <section>
+                    <h4><i class="marker"></i>Bellmansgatan 12, Stockholm</h4>
+                    <h4 id="b"><i class="phone"></i>08-55 69 21 18</h4>
+                    <p><i class="clock"></i>Öppetider</p>
+                    <li>Måndag</li><ul>16:00-22:00</ul><br>
+                    <li>Tisdag</li><ul>16:00-00:00</ul><br>
+                    <li>Onsdag</li><ul>16:00-00:00</ul><br>
+                    <li>Torsdag</li><ul>16:00-00:00</ul><br>
+                    <li>Fredag</li><ul>16:00-01:00</ul><br>
+                    <li>Lördag</li><ul>16:00-01:00</ul><br>
+                    <li>Söndag</li><ul>16:00-22:00</ul><br>
+                </section>
+                <i class="fork"></i>
+                <svg src="assets/other/pdf/menu.svg"></svg>
+            </div>
+        </a>
+        <a class="places">
             <li>
                 <h3>BISHOPS ARMS</h3>
                 <h4><i class="marker"></i>Tyska Brinken 36, Stockholm</h4>
                 <h4 id="b"><i class="phone"></i>08-12 13 47 20</h4>
             </li>
-        </div>
-
+        </a>
     </main>
 	<footer>
 		<ul id="links">
