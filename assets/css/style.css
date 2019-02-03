@@ -217,16 +217,13 @@ div[data-u="navigator"] {
     letter-spacing: 2px;
     width: 300px;
 }
-.places a#address {
-    /*display: inline;*/
-}
 .places a#tel {
     width: max-content;
     margin-left: 250px;
 }
 .places a#mail {
     display: block;
-    margin: -1px 0 0 -1px;
+    margin: -25px 0 0 -1px;
     letter-spacing: 1.5px;
     height: 15px;
 }
@@ -256,6 +253,7 @@ div[data-u="navigator"] {
 
 .places a#book:hover {
     text-shadow: unset;
+    color: #c41618;
 }
 .places b {
     display: block;
