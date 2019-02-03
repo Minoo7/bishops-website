@@ -16,6 +16,11 @@ $(document).ready(function(){
   });
 });
 
+function linkclick() {
+  var link = document.getElementById('k');
+  link.click();
+}
+
 document.addEventListener('mousedown', function (event) { //prevent double click selection
     if (event.detail > 1) {
       event.preventDefault();
