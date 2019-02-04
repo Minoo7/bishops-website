@@ -99,7 +99,6 @@
                         var marker = new google.maps.Marker(markerOptions);
     
                         google.maps.event.addListener(marker, 'click', function() {
-                            parent.resetCollapse();
                             window.open("resturanger.html#bellmansgatan", "_parent");
                             parent.document.getElementById('bellmansgatan').click();
                         });
@@ -133,7 +132,11 @@
                         };
                         
                         var marker = new google.maps.Marker(markerOptions);
-    
+
+                        google.maps.event.addListener(marker, 'click', function() {
+                            window.open("resturanger.html#Gamla Stan", "_parent");
+                            parent.document.getElementById('Gamla Stan').click();
+                        });
     
                     })();
                     

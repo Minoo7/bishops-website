@@ -1,9 +1,20 @@
 $(document).ready(function(){
   $('div.places').click(function(){
-
+    
     var child = $(this).children();
+    var tsec = $(child).children('section');
+    var tard = $(child).children('.arrowdown');
+    var ttel = $(child).children('a#tel');
+
+    function showOne() {
+      $('div.places section').not(tsec).hide();
+      $('div.places .arrowdown').not(tard).attr("class","arrow");
+      $('div.places a#tel').not(ttel).removeClass('newline');
+    }
+    showOne(tsec);
 
     $(child).children('section').toggle();
+
     $(child).children('.arrow').toggleClass('arrowdown');
     $(child).children('a#tel').toggleClass('newline');
 
@@ -23,16 +34,11 @@ $(document).ready(function(){
   
 });
 
-function resetCollapse() {
+/*function resetCollapse() {
   $('div.places section').hide();
   $('div.places .arrowdown').attr('class','arrow');
   $('div.places a#tel').removeClass('newline');
-}
-
-function linkclick() {
-  var link = document.getElementById('k');
-  link.click();
-}
+}*/
 
 document.addEventListener('mousedown', function (event) { //prevent double click selection
     if (event.detail > 1) {
@@ -41,20 +47,11 @@ document.addEventListener('mousedown', function (event) { //prevent double click
 }, false);
 
 function showtimes() {
-  //$('.places aside div').toggle();
-
   $(".places aside p").click(function() { try {
     return false;
   }
   finally {
-    //$('<form method="get" action="' + $(this).attr("onclick") + '"></form>').appendTo("body").submit();
     $('.places aside div').toggle();
   }
   });
-  
-  /*$(".places aside *").click(function() { try {return false;}
-  finally {
-    $('<form method="get" action="' + $(this).attr("onclick") + '"></form>').appendTo("body").submit();
-  }
-  });*/
 }

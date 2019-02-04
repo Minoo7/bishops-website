@@ -229,14 +229,14 @@ div[data-u="navigator"] {
     }
 }
 @media only screen and (max-width: 1200px) {
-    .places > div > section a#pdfa {
+    .places > div > section a#pdf {
         position: unset !important;
         margin-top: 12px;
         width: 138px;
         height: 0px;
         padding-bottom: 30px !important;
     }
-    .places > div > section a#pdfa > i {
+    .places > div > section a#pdf > i {
         padding-right: 9px !important;
     }
     .menu:before {
@@ -442,16 +442,6 @@ img[src="assets/images/googlemapsicon.png"] {
     padding-bottom: 20px;
 }
 .places > div > section a#pdf {
-    position: relative;
-    left: 700px;
-    top: -225px;
-    display: block;
-    /*margin: -220px 0 0 650px;*/
-    width: 138px;
-    height: 0px;
-    padding-bottom: 20px;
-}
-.places > div > section a#pdfa {
     position: relative;
     left: 700px;
     top: -75px;
