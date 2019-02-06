@@ -218,14 +218,15 @@ div[data-u="navigator"] {
     width: 300px;
 }
 .places a#tel {
+    margin-top: -25px;
+    margin-left: 40%;
+    display: block;
     width: max-content;
-    margin-left: 20%;
 }
 @media only screen and (max-width: 800px) {
     .places a#tel {
-        width: max-content;
         margin-left: 0;
-        display: block;
+        margin-top: 0 !important;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -413,7 +414,7 @@ img[src="assets/images/googlemapsicon.png"] {
     /*margin-top: -17px;*/
 }
 .places .newline {
-    display: block;
+    margin-top: 0px !important;
     margin-left: 0px !important;
 }
 .places > div > section i {
