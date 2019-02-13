@@ -175,6 +175,27 @@ div[data-u="navigator"] {
 
 /******/
 
+* {
+    box-sizing: border-box;
+}
+
+#searchbox {
+    width: 100%;
+    background-color: lightcoral;
+    margin-right: 100px !important;
+}
+
+input {
+    background-image: url(../images/searchicon.png);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 10px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+
 .places {
     /*-webkit-user-select: none; /* webkit (safari, chrome) browsers */
     /*-moz-user-select: none; /* mozilla browsers */
