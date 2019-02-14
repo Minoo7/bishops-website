@@ -24,15 +24,17 @@
     <!--Header-->
     <header>
         <img src="assets/images/logo.jpg">
-        <button class="triple"></button>
+        <!--<button class="triple"></button>-->
     </header>
-    
+
+    <nav>
+        <li>hem</li>
+    </nav>
+
     <main>
         <iframe src="map.html" width="100%" height="580px" style="border:none;"></iframe>
-        <!--<input type="search">search-->
-        
         <div id="searchbox">
-            <input type="text" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <input type="text" onkeyup="search()" placeholder="Sök resturang..." title="Type in a name">
         </div>
 
         <div class="places" id="Bellmansgatan"><div>
@@ -311,25 +313,6 @@
                     <b></b>
                 </section>
         </div></div>
-        <script>
-            function myFunction() {
-                var input, filter, ul, li, div, h2, places, a, i, txtValueA, txtValueB;
-                input = document.getElementsByTagName("input")[0];
-                filter = input.value.toUpperCase();
-                places = document.getElementsByClassName("places");
-                for (i = 0; i < places.length; i++) {
-                    a = places[i].getElementsByTagName("a")[0];
-                    h2 = places[i].getElementsByTagName("h2")[0];
-                    txtValueA = a.innerText;
-                    txtValueB = h2.textContent;
-                    if ((txtValueA.toUpperCase().indexOf(filter) > -1) || (txtValueB.toUpperCase().indexOf(filter) > -1)) {
-                        places[i].style.display = "";
-                    } else {
-                        places[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
     </main>
 	<footer>
 		<ul id="links">

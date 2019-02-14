@@ -55,3 +55,37 @@ function showtimes() {
   }
   });
 }
+
+function search() {
+  var input, filter, ul, li, div, h2, places, a, i, txtValueA, txtValueB;
+  input = document.getElementsByTagName("input")[0];
+  filter = input.value.toUpperCase();
+  places = document.getElementsByClassName("places");
+  for (i = 0; i < places.length; i++) {
+      a = places[i].getElementsByTagName("a")[0];
+      h2 = places[i].getElementsByTagName("h2")[0];
+      txtValueA = a.innerText;
+      txtValueB = h2.textContent;
+      if ((txtValueA.toUpperCase().indexOf(filter) > -1) || (txtValueB.toUpperCase().indexOf(filter) > -1)) {
+          places[i].style.display = "";
+      } else {
+          places[i].style.display = "none";
+      }
+  }
+}
+
+$(window).load(function(){
+    
+  $(window).scroll(function() {
+      var hT = $('#scroll-to').offset().top,
+      hH = $('#scroll-to').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+      if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+          $('#static-bar').addClass('view2')
+      }
+      else {
+          $('#static-bar').removeClass('view2');
+      }
+  });
+});

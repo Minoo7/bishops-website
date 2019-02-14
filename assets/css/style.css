@@ -33,40 +33,14 @@ main {
     margin-right: 10% !important;
 }
 
-/*footer {
-	width: 100%;
-    height: 30vw;
-    background-color: #211D1A;
-	margin-top: 1%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+nav {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    text-align: center;
 }
-
-.wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1180px;
-    padding: 0 20px;
-    position: relative;
-}*/
-
-.triple:before {
-    content: "\e92b";
-}
-
-.triple {
-    background: transparent;
-    border: none;
-    font-family: icon;
-    font-size: 2.25em;
-    color: white;
-    margin-left: auto;
-    margin-top: -90px;
-    margin-right: 13px;
-    margin-bottom: 80px;
-    display: block;
+nav li {
+    list-style-type: none;
+    color: #f2cb54;
 }
 
 @font-face {
@@ -80,7 +54,9 @@ header img[src*="assets/images/logo.jpg"] {
     margin-right: auto;
     padding-left: 9px;
     width: 700px;
+    margin-bottom: 40px;
 }
+
 
 /*@media only screen and (min-width: 1000px) {
 	header > img[src*="assets/images/logo.jpg"] {
@@ -175,30 +151,63 @@ div[data-u="navigator"] {
 
 /******/
 
+#static-bar {
+    position: fixed;
+	width: 100%;
+	height: 72px;
+	top: 0;
+	left: 0;
+	text-align: center;
+    background-color: rgba(33, 29, 26, 0.603);
+	/*transition: all 3s;*/
+	white-space: nowrap;
+}
+
+.triple:before {
+    content: "\e92b";
+}
+
+.triple {
+    background: transparent;
+    border: none;
+    font-family: icon;
+    font-size: 2.25em;
+    color: white !important;
+    margin-left: auto;
+    /*margin-top: -90px;*/
+    margin-right: 13px;
+    margin-bottom: 80px;
+    display: block;
+}
+
 * {
     box-sizing: border-box;
 }
 
 #searchbox {
-    width: 100%;
-    background-color: lightcoral;
-    margin-right: 100px !important;
+    width: 100% ;
+    background-color: rgba(196,22,24,.5);
+    padding: 15px;
+}
+
+input:focus {
+    outline: 0px;
 }
 
 input {
-    background-image: url(../images/searchicon.png);
-    background-position: 10px 12px;
+    background-image: url(../images/searchicon1.png);
+    background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 100%;
-    margin: 10px;
+    background-color: #eeeeee;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
+    border: 1px solid #eeeeee;
+    width: 100%;
 }
 
 .places {
     /*-webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    /*-moz-user-select: none; /* mozilla browsers */
+    /*-moz-user-select: none; /* mozilla browsers */ 
     /*-khtml-user-select: none; /* webkit (konqueror) browsers */
     /*-ms-user-select: none; /* IE10+ */
     /*cursor: pointer;*/
