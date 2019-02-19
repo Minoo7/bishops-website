@@ -33,14 +33,36 @@ main {
     margin-right: 10% !important;
 }
 
+a {
+    color: inherit;
+}
+
 nav {
+    font-family: Alternate;
+    font-size: 24px;
+    letter-spacing: -1px;
     margin-left: 10% !important;
     margin-right: 10% !important;
     text-align: center;
+    margin-bottom: 20px;
 }
-nav li {
+nav a {
     list-style-type: none;
     color: #f2cb54;
+    display: inline;
+    margin-left: 100px;
+    /*border-style: dashed;*/
+    /*background-color: blue;*/
+    /*display: inline-block;*/
+    /*width: 30px;*/
+    /*width: max-content;
+    padding: 10px;*/
+}
+nav a:hover {
+    border-bottom: 2px solid #cf2925;
+}
+nav a:first-child {
+    margin-left: 0px;
 }
 
 @font-face {
@@ -54,7 +76,7 @@ header img[src*="assets/images/logo.jpg"] {
     margin-right: auto;
     padding-left: 9px;
     width: 700px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -137,6 +159,11 @@ div[data-u="navigator"] {
 @font-face {
     font-family: fontawesome-light;
     src: url(../fonts/Fontawesome\ Light.otf);
+}
+
+@font-face {
+    font-family: Alternate;
+    src: url(../fonts/AlternateGothic.ttf);
 }
 
 @font-face {
