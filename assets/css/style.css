@@ -1,11 +1,11 @@
 html {
-    /* -ms-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; */
+    box-sizing: border-box;
     font-size: 62.5%;
     font-family: sans-serif;
-    /* width: device-width; */
+    width: device-width;
 	margin: 25px 0 0 0;
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
@@ -14,64 +14,41 @@ html {
 }
 
 body {
-    position: absolute !important;
-    box-sizing: border-box;
     font-size: 1.6rem;
     font-style: normal;
     line-height: 1.6;
     margin: 0;
     font-size: 14px;
-    /* width: device-width; */
-	/* margin: 10px 25px 0 0 !important; */
+    width: device-width;
+	/*margin: 10px 0 0 0;*/
     font-weight: 400;
-    margin: auto;
-    width: auto;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #211D1A;
     /*overflow-x: hidden;*/
 }
 
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-
+#container {
+    position: absolute;
+    left: 50%;
+    width: 767px;
+    transform: translate(-50%);
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media (min-width: 900px) {
     main {
-        /*margin: 0 0% 0 0% !important;*/
+        
     }
 }
 
-/*@media (max-width: 960px) {
-    main * {
-        width: auto !important;
+@media (max-width: 767px) {
+    #container {
+        width: 100% !important;
+        position: unset;
+        left: unset;
+        transform: unset;
     }
-    .container {
-        width: auto;
-    }
-    .column {
-        float: none;
-        width: auto;
-    }
-}*/
+}
 
 /*@viewport {
     width: device-width !important;
@@ -85,14 +62,11 @@ body {
 }*/
 
 main {
-    /*margin-left: 10%;
-    margin-right: 10%;*/
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 #main2 {
-    /* position: absolute;
-    margin-left: 0;
-    margin-right: 0; */
 }
 
 a {
