@@ -553,6 +553,10 @@
                         
                         var marker = new google.maps.Marker(markerOptions);
     
+                        google.maps.event.addListener(marker, 'click', function() {
+                            window.open("resturanger.html#Skellefteå", "_parent");
+                            parent.document.getElementById('Skellefteå').click();
+                        });
     
                     })();
                     

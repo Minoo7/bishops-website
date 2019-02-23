@@ -1,3 +1,62 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
+
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -28,27 +87,79 @@ body {
     /*overflow-x: hidden;*/
 }
 
-#container {
-    position: absolute;
-    left: 50%;
-    width: 767px;
-    transform: translate(-50%);
+iframe {
+    translate: unset;
 }
 
-@media (min-width: 900px) {
+#container {
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #container {
+        display: block;
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+
+        /*position: absolute;*/
+        /*left: 50%;
+        /*-webkit-transform: translate(-50.09%);
+        /*transform: translate(-50.09%); /*translate3d(0,0,0,0) translateZ();*/
+        /* backface-visibility: hidden; */
+        /* -webkit-backface-visibility: hidden; */
+    }
     main {
-        
+        margin: 0 !important;
     }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 960px) {
+    #container {
+        display: block;
+        width: 100%;
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+/*.linefix1 {
+    position: relative;
+}
+
+.linefix1::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    border-left: 2px solid #211D1A;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -1px;
+    pointer-events: none;
+}
+.linefix2:after {
+    content: '';
+    /* position: absolute; */
+    /*z-index: 2;
+    border-right: 2px solid #211D1A;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    left: 0px;
+    pointer-events: none;
+}*/
+
+
+
+/*@media (max-width: 767px) {
     #container {
         width: 100% !important;
         position: unset;
         left: unset;
         transform: unset;
     }
-}
+}*/
 
 /*@viewport {
     width: device-width !important;
@@ -62,11 +173,8 @@ body {
 }*/
 
 main {
-    /* margin-left: 10%;
-    margin-right: 10%; */
-}
-
-#main2 {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 a {
@@ -86,7 +194,7 @@ nav a {
     list-style-type: none;
     color: #f2cb54;
     display: inline;
-    margin-left: 100px;
+    margin-left: 10%;
     /*border-style: dashed;*/
     /*background-color: blue;*/
     /*display: inline-block;*/
@@ -316,7 +424,7 @@ input {
     display: block;
     width: max-content;
 }
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
     .places a#tel {
         margin-left: 0;
         margin-top: 0 !important;
@@ -429,7 +537,7 @@ input {
     .places > div > a {
         font-size: 14px;
     }
-}
+}*/
 
 #mån:before {
     content: "Måndag:";
