@@ -13,8 +13,9 @@
 
     <!--<script src="assets/js/scripts.js"></script>-->
     <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
-    <script src="assets/js/slideshow.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+    <!--<script src="assets/js/slideshow.js"></script>-->
+    <script src="assets/js/slide.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -38,15 +39,12 @@
             <!--<i class="awr"></i>-->
 
             <!--Slideshow-->
-            <button style="display: block;" onclick="slideshow();">Slideshow</button>
-            <button style="display: block;" onclick="ScaleSlider();">Scale slider</button>
-            <button style="display: block;" onclick="javascript:slideshow_slider.$ScaleWidth(480)">test scale</button>
-            <section id="slideshow">
-                <section data-u="slides">
-                    <div><img src="assets/images/bar.png"></div>
-                    <div><img src="assets/images/jobb.jpg"></div>
-                    <div><img src="assets/images/logo.jpg"></div>
-                </section>
+            <!--<div id="slideshow">
+                <div data-u="slides">
+                    <div><img data-u="image" src="assets/images/bar.png"></div>
+                    <div><img data-u="image" src="assets/images/jobb.jpg"></div>
+                    <div><img data-u="image" src="assets/images/logo.jpg"></div>
+                </div>
 
                 <div data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
                     <div data-u="prototype" class="bullet">
@@ -55,16 +53,15 @@
                         </svg>
                     </div>
                 </div>
-
-                <!--<div class="arrows" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                <svg viewbox="0 0 16000 16000"><polyline points="11040,1920 4960,8000 11040,14080 "></polyline></svg>
+                
+                <div class="arrows" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                    <svg viewbox="0 0 16000 16000"><polyline points="11040,1920 4960,8000 11040,14080 "></polyline></svg>
+                </div>
+                <div class="arrows" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                    <svg viewbox="0 0 16000 16000"><polyline points="4960,1920 11040,8000 4960,14080 "></polyline></svg>
+                </div>
             </div>
-            <div class="arrows" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                <svg viewbox="0 0 16000 16000"><polyline points="4960,1920 11040,8000 4960,14080 "></polyline></svg>
-            </div>-->
-            <!--<script>window.addEventListener("resize", slideshow());</script>-->
-            <!--<script type="text/javascript">slideshow();</script>-->
-            </section>
+            <script type="text/javascript">slideshow();</script>-->
 
             <!--Box links-->
             <ul class="box">
