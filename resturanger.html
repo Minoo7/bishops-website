@@ -8,54 +8,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/ico" href="assets/images/logo-icon.ico"> 
 
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/resturanger.css">
 
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
-    <script src="assets/js/slideshow.js"></script>
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <!--Header-->
-        <header>
-            <img src="assets/images/logo.jpg">
-            <!--<button class="triple"></button>-->
-        </header>
-        
-        <nav>
-            <a href="./index.html">Hem</a>
-            <a href="./resturanger.html">Resturanger</a>
-            <a href="./om.html">Om oss</a>
-            <a href="./kontakt.html">Kontakt</a>
-        </nav>
-        
-        <main id="main2">
-            <div class="linefix1"><div class="linefix2"><iframe src="map.html" width="100%" height="580px" frameborder="0" allowtransparency="true" style="visibility:hidden;" onload="this.style.visibility = 'visible';"></iframe></div></div>
-            <div id="searchbox">
-                <input type="text" onkeyup="search()" placeholder="Sök resturang..." title="Type in a name">
-            </div>
+    <!--Header-->
+    <header>
+        <img src="assets/images/logo.jpg">
+        <!--<button class="triple"></button>-->
+    </header>
+    
+    <nav>
+        <a href="./index.html">Hem</a>
+        <a href="./resturanger.html">Resturanger</a>
+        <a href="./om.html">Om oss</a>
+        <a href="./kontakt.html">Kontakt</a>
+    </nav>
+    
+    <main>
+        <div class="linefix1"><div class="linefix2"><iframe src="map.html" width="100%" height="580px" frameborder="0" allowtransparency="true" style="visibility:hidden;" onload="this.style.visibility = 'visible';"></iframe></div></div>
+        <div id="searchbox">
+            <input type="text" onkeyup="search()" placeholder="Sök resturang..." title="Type in a name">
+        </div>
 
-            <div class="places" id="Bellmansgatan"><div>
-            <!-- <div id="iconmove"><img src="assets/images/bishopsicon.png"></div> -->
-            <h2>BISHOPS ARMS Bellmansgatan</h2><i class="arrow"></i>
-            <a href="https://goo.gl/maps/EjbT5z6S8K52"><i class="marker"></i>Bellmansgatan 12, Stockholm</a>
-            <a id="tel" href="tel:08-55 69 21 18"><i class="phone"></i>08-55 69 21 18</a><b></b>
+        <div class="places" id="Bellmansgatan"><div>
+        <!-- <div id="iconmove"><img src="assets/images/bishopsicon.png"></div> -->
+        <h2>BISHOPS ARMS Bellmansgatan</h2><i class="arrow"></i>
+        <a href="https://goo.gl/maps/EjbT5z6S8K52"><i class="marker"></i>Bellmansgatan 12, Stockholm</a>
+        <a id="tel" href="tel:08-55 69 21 18"><i class="phone"></i>08-55 69 21 18</a><b></b>
+        <section>
+            <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+            <a id="pdf" href="assets/other/pdf/Meny Bellmansgatan.pdf"><i class="menu"></i><h3>Meny</h3></a>
+            <aside>
+                <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                <li id="tis"></li><ul>16:00-00:00</ul><br>
+                <li id="ons"></li><ul>16:00-00:00</ul><br>
+                <li id="tor"></li><ul>16:00-00:00</ul><br>
+                <li id="fre"></li><ul>16:00-01:00</ul><br>
+                <li id="lör"></li><ul>16:00-01:00</ul><br>
+                <li id="sön"></li><ul>16:00-22:00</ul></div>
+            </aside>
+            <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+            <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+            <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+            <b></b>
+        </section>
+        </div></div>
+        <div class="places" id="Gamla Stan"><div>
+            <h2>BISHOPS ARMS Gamla Stan</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/JWLxBtjeNEN2"><i class="marker"></i>Tyska Brinken 36, Stockholm</a>
+            <a id="tel" href="tel:08-12 13 47 20"><i class="phone"></i>08-12 13 47 20</a><b></b>
             <section>
                 <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                <a id="pdf" href="assets/other/pdf/Meny Bellmansgatan.pdf"><i class="menu"></i><h3>Meny</h3></a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480488/Meny_Gamla_Stan.pdf?TS=636783254847896799"><i class="menu"></i><h3>Meny</h3></a>
                 <aside>
                     <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
                     <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                    <li id="tis"></li><ul>16:00-00:00</ul><br>
+                    <li id="tis"></li><ul>16:00-22:00</ul><br>
                     <li id="ons"></li><ul>16:00-00:00</ul><br>
                     <li id="tor"></li><ul>16:00-00:00</ul><br>
-                    <li id="fre"></li><ul>16:00-01:00</ul><br>
-                    <li id="lör"></li><ul>16:00-01:00</ul><br>
+                    <li id="fre"></li><ul>14:00-01:00</ul><br>
+                    <li id="lör"></li><ul>14:00-00:00</ul><br>
                     <li id="sön"></li><ul>16:00-22:00</ul></div>
                 </aside>
                 <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
@@ -63,45 +84,114 @@
                 <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
                 <b></b>
             </section>
-            </div></div>
-            <div class="places" id="Gamla Stan"><div>
-                <h2>BISHOPS ARMS Gamla Stan</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/JWLxBtjeNEN2"><i class="marker"></i>Tyska Brinken 36, Stockholm</a>
-                <a id="tel" href="tel:08-12 13 47 20"><i class="phone"></i>08-12 13 47 20</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480488/Meny_Gamla_Stan.pdf?TS=636783254847896799"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                        <li id="tis"></li><ul>16:00-22:00</ul><br>
-                        <li id="ons"></li><ul>16:00-00:00</ul><br>
-                        <li id="tor"></li><ul>16:00-00:00</ul><br>
-                        <li id="fre"></li><ul>14:00-01:00</ul><br>
-                        <li id="lör"></li><ul>14:00-00:00</ul><br>
-                        <li id="sön"></li><ul>16:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Vasagatan"><div>
-            <h2>BISHOPS ARMS Vasagatan</h2><i class="arrow"></i>
-            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Tyska Brinken 36, Stockholm</a>
-            <a id="tel" href="tel:08-20 23 25"><i class="phone"></i>08-20 23 25</a><b></b>
-            <section>
+        </div></div>
+        <div class="places" id="Vasagatan"><div>
+        <h2>BISHOPS ARMS Vasagatan</h2><i class="arrow"></i>
+        <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Tyska Brinken 36, Stockholm</a>
+        <a id="tel" href="tel:08-20 23 25"><i class="phone"></i>08-20 23 25</a><b></b>
+        <section>
+            <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+            <a id="pdf" href="https://www.bishopsarms.com/DxF-1480480/Meny_Vasagatan.pdf?TS=636699183459934018"><i class="menu"></i><h3>Meny</h3></a>
+            <aside>
+                <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                <div><li id="mån"></li><ul>11:00-01:00</ul><br>
+                    <li id="tis"></li><ul>11:00-01:00</ul><br>
+                    <li id="ons"></li><ul>11:00-03:00</ul><br>
+                    <li id="tor"></li><ul>11:00-03:00</ul><br>
+                    <li id="fre"></li><ul>11:00-03:00</ul><br>
+                    <li id="lör"></li><ul>12:00-03:00</ul><br>
+                    <li id="sön"></li><ul>12:00-23:00</ul></div>
+            </aside>
+            <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+            <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+            <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+            <b></b>
+        </section>
+        </div></div>
+        <div class="places" id="Hornsgatan"><div>
+        <h2>BISHOPS ARMS Hornsgatan</h2><i class="arrow"></i>
+        <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Hornsgatan 154, Stockholm</a>
+        <a id="tel" href="tel:08-12 13 49 69"><i class="phone"></i>08-12 13 49 69</a><b></b>
+        <section>
                 <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480480/Meny_Vasagatan.pdf?TS=636699183459934018"><i class="menu"></i><h3>Meny</h3></a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-2387593/Meny_Hornsgatan.pdf?TS=636837782976063210"><i class="menu"></i><h3>Meny</h3></a>
                 <aside>
                     <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                    <div><li id="mån"></li><ul>11:00-01:00</ul><br>
-                        <li id="tis"></li><ul>11:00-01:00</ul><br>
-                        <li id="ons"></li><ul>11:00-03:00</ul><br>
-                        <li id="tor"></li><ul>11:00-03:00</ul><br>
-                        <li id="fre"></li><ul>11:00-03:00</ul><br>
-                        <li id="lör"></li><ul>12:00-03:00</ul><br>
+                    <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                        <li id="tis"></li><ul>16:00-22:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:45</ul><br>
+                        <li id="tor"></li><ul>16:00-23:45</ul><br>
+                        <li id="fre"></li><ul>16:00-01:00</ul><br>
+                        <li id="lör"></li><ul>15:00-01:00</ul><br>
+                        <li id="sön"></li><ul>15:00-22:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Sundbyberg"><div>
+        <h2>BISHOPS ARMS Sundbyberg</h2><i class="arrow"></i>
+        <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Landsvägen 49, Stockholm</a>
+        <a id="tel" href="tel:08-25 55 54"><i class="phone"></i>08-25 55 54</a><b></b>
+        <section>
+            <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+            <a id="pdf" href="https://www.bishopsarms.com/DxF-1480477/Meny_Sundbyberg.pdf?TS=636754702975043598"><i class="menu"></i><h3>Meny</h3></a>
+            <aside>
+                <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                    <li id="tis"></li><ul>16:00-23:00</ul><br>
+                    <li id="ons"></li><ul>16:00-00:00</ul><br>
+                    <li id="tor"></li><ul>16:00-00:00</ul><br>
+                    <li id="fre"></li><ul>14:00-01:00</ul><br>
+                    <li id="lör"></li><ul>13:00-01:00</ul><br>
+                    <li id="sön"></li><ul>14:00-22:00</ul></div>
+            </aside>
+            <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+            <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+            <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+            <b></b>
+        </section>
+        </div></div>
+        <div class="places" id="Trollhättan"><div>
+            <h2>BISHOPS ARMS Trollhättan</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Kungsgatan 33</a>
+            <a id="tel" href="tel:0520-42 01 00"><i class="phone"></i>0520-42 01 00</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1574276/Meny_Trollhattan.pdf?TS=636730367373046445"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>17:00-22:00</ul><br>
+                        <li id="tis"></li><ul>17:00-23:00</ul><br>
+                        <li id="ons"></li><ul>17:00-23:00</ul><br>
+                        <li id="tor"></li><ul>17:00-23:00</ul><br>
+                        <li id="fre"></li><ul>16:00-01:00</ul><br>
+                        <li id="lör"></li><ul>16:00-01:00</ul><br>
+                        <li id="sön"></li><ul>16:00-21:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Järntorget"><div>
+            <h2>BISHOPS ARMS Järntorget</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Järntorget 6, Göteborg</a>
+            <a id="tel" href="tel:031-24 00 50"><i class="phone"></i>031-24 00 50</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1701558/Meny_Jarntorget.pdf?TS=636123108677832279"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>16:00-00:00</ul><br>
+                        <li id="tis"></li><ul>16:00-01:00</ul><br>
+                        <li id="ons"></li><ul>16:00-01:00</ul><br>
+                        <li id="tor"></li><ul>16:00-01:00</ul><br>
+                        <li id="fre"></li><ul>15:00-02:00</ul><br>
+                        <li id="lör"></li><ul>12:00-02:00</ul><br>
                         <li id="sön"></li><ul>12:00-23:00</ul></div>
                 </aside>
                 <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
@@ -109,45 +199,45 @@
                 <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
                 <b></b>
             </section>
-            </div></div>
-            <div class="places" id="Hornsgatan"><div>
-            <h2>BISHOPS ARMS Hornsgatan</h2><i class="arrow"></i>
-            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Hornsgatan 154, Stockholm</a>
-            <a id="tel" href="tel:08-12 13 49 69"><i class="phone"></i>08-12 13 49 69</a><b></b>
-            <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-2387593/Meny_Hornsgatan.pdf?TS=636837782976063210"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                            <li id="tis"></li><ul>16:00-22:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:45</ul><br>
-                            <li id="tor"></li><ul>16:00-23:45</ul><br>
-                            <li id="fre"></li><ul>16:00-01:00</ul><br>
-                            <li id="lör"></li><ul>15:00-01:00</ul><br>
-                            <li id="sön"></li><ul>15:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Sundbyberg"><div>
-            <h2>BISHOPS ARMS Sundbyberg</h2><i class="arrow"></i>
-            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Landsvägen 49, Stockholm</a>
-            <a id="tel" href="tel:08-25 55 54"><i class="phone"></i>08-25 55 54</a><b></b>
+        </div></div>
+        <div class="places" id="Östersund"><div>
+            <h2>BISHOPS ARMS Östersund</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Stortorget 8</a>
+            <a id="tel" href="tel:063-10 15 29"><i class="phone"></i>063-10 15 29</a><b></b>
             <section>
                 <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480477/Meny_Sundbyberg.pdf?TS=636754702975043598"><i class="menu"></i><h3>Meny</h3></a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480483/Meny_Ostersund.pdf?TS=636802875444091425"><i class="menu"></i><h3>Meny</h3></a>
                 <aside>
                     <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
                     <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                        <li id="tis"></li><ul>16:00-23:00</ul><br>
-                        <li id="ons"></li><ul>16:00-00:00</ul><br>
-                        <li id="tor"></li><ul>16:00-00:00</ul><br>
-                        <li id="fre"></li><ul>14:00-01:00</ul><br>
-                        <li id="lör"></li><ul>13:00-01:00</ul><br>
+                        <li id="tis"></li><ul>16:00-22:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:00</ul><br>
+                        <li id="tor"></li><ul>16:00-23:00</ul><br>
+                        <li id="fre"></li><ul>15:00-02:00</ul><br>
+                        <li id="lör"></li><ul>14:00-02:00</ul><br>
+                        <li id="sön"></li><ul>16:00-22:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Hässleholm"><div>
+            <h2>BISHOPS ARMS Hässleholm</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Första Avenyen 3</a>
+            <a id="tel" href="tel:0451-25 35 70"><i class="phone"></i>0451-25 35 70</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480489/Meny_Hassleholm.pdf?TS=636752084048788807"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                        <li id="tis"></li><ul>16:00-22:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:00</ul><br>
+                        <li id="tor"></li><ul>16:00-23:00</ul><br>
+                        <li id="fre"></li><ul>16:00-01:00</ul><br>
+                        <li id="lör"></li><ul>14:00-01:00</ul><br>
                         <li id="sön"></li><ul>14:00-22:00</ul></div>
                 </aside>
                 <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
@@ -155,68 +245,91 @@
                 <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
                 <b></b>
             </section>
-            </div></div>
-            <div class="places" id="Trollhättan"><div>
-                <h2>BISHOPS ARMS Trollhättan</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Kungsgatan 33</a>
-                <a id="tel" href="tel:0520-42 01 00"><i class="phone"></i>0520-42 01 00</a><b></b>
+        </div></div>
+         <div class="places" id="Borås"><div>
+            <h2>BISHOPS ARMS Borås</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Stora Brogatan 3</a>
+            <a id="tel" href="tel:033-10 15 90"><i class="phone"></i>033-10 15 90</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480484/Meny_Boras.pdf?TS=636797918756234653"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>17:00-23:00</ul><br>
+                        <li id="tis"></li><ul>17:00-23:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:00</ul><br>
+                        <li id="tor"></li><ul>16:00-23:00</ul><br>
+                        <li id="fre"></li><ul>15:00-01:00</ul><br>
+                        <li id="lör"></li><ul>12:00-01:00</ul><br>
+                        <li id="sön"></li><ul>17:00-22:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+         <div class="places" id="Skövde"><div>
+            <h2>BISHOPS ARMS Skövde</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Hertig Johans Torg 4</a>
+            <a id="tel" href="tel:0500-41 01 22"><i class="phone"></i>0500-41 01 22</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480476/Meny_Skovde.pdf?TS=636657644533501944"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                        <li id="tis"></li><ul>16:00-22:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:00</ul><br>
+                        <li id="tor"></li><ul>16:00-23:00</ul><br>
+                        <li id="fre"></li><ul>16:00-01:00</ul><br>
+                        <li id="lör"></li><ul>12:00-01:00</ul><br>
+                        <li id="sön"></li><ul>12:00-21:30</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Umeå"><div>
+            <h2>BISHOPS ARMS Umeå</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Renmarkstorget 8</a>
+            <a id="tel" href="tel:090-10 09 90"><i class="phone"></i>090-10 09 90</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480479/Meny_Umea.pdf?TS=636844502719485719"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>16:00-00:00</ul><br>
+                        <li id="tis"></li><ul>15:00-00:00</ul><br>
+                        <li id="ons"></li><ul>15:00-01:00</ul><br>
+                        <li id="tor"></li><ul>15:00-01:00</ul><br>
+                        <li id="fre"></li><ul>14:00-02:00</ul><br>
+                        <li id="lör"></li><ul>11:00-02:00</ul><br>
+                        <li id="sön"></li><ul>12:00-00:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Skellefteå"><div>
+                <h2>BISHOPS ARMS Skellefteå</h2><i class="arrow"></i>
+                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Torget 6</a>
+                <a id="tel" href="tel:0910-21 17 60"><i class="phone"></i>0910-21 17 60</a><b></b>
                 <section>
                     <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1574276/Meny_Trollhattan.pdf?TS=636730367373046445"><i class="menu"></i><h3>Meny</h3></a>
+                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1907524/Meny_Skelleftea.pdf?TS=636827045177369319"><i class="menu"></i><h3>Meny</h3></a>
                     <aside>
                         <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>17:00-22:00</ul><br>
-                            <li id="tis"></li><ul>17:00-23:00</ul><br>
-                            <li id="ons"></li><ul>17:00-23:00</ul><br>
-                            <li id="tor"></li><ul>17:00-23:00</ul><br>
-                            <li id="fre"></li><ul>16:00-01:00</ul><br>
-                            <li id="lör"></li><ul>16:00-01:00</ul><br>
-                            <li id="sön"></li><ul>16:00-21:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Järntorget"><div>
-                <h2>BISHOPS ARMS Järntorget</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Järntorget 6, Göteborg</a>
-                <a id="tel" href="tel:031-24 00 50"><i class="phone"></i>031-24 00 50</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1701558/Meny_Jarntorget.pdf?TS=636123108677832279"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-00:00</ul><br>
-                            <li id="tis"></li><ul>16:00-01:00</ul><br>
+                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                            <li id="tis"></li><ul>16:00-00:00</ul><br>
                             <li id="ons"></li><ul>16:00-01:00</ul><br>
                             <li id="tor"></li><ul>16:00-01:00</ul><br>
                             <li id="fre"></li><ul>15:00-02:00</ul><br>
                             <li id="lör"></li><ul>12:00-02:00</ul><br>
-                            <li id="sön"></li><ul>12:00-23:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Östersund"><div>
-                <h2>BISHOPS ARMS Östersund</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Stortorget 8</a>
-                <a id="tel" href="tel:063-10 15 29"><i class="phone"></i>063-10 15 29</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480483/Meny_Ostersund.pdf?TS=636802875444091425"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                            <li id="tis"></li><ul>16:00-22:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:00</ul><br>
-                            <li id="tor"></li><ul>16:00-23:00</ul><br>
-                            <li id="fre"></li><ul>15:00-02:00</ul><br>
-                            <li id="lör"></li><ul>14:00-02:00</ul><br>
                             <li id="sön"></li><ul>16:00-22:00</ul></div>
                     </aside>
                     <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
@@ -224,187 +337,71 @@
                     <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
                     <b></b>
                 </section>
-            </div></div>
-            <div class="places" id="Hässleholm"><div>
-                <h2>BISHOPS ARMS Hässleholm</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Första Avenyen 3</a>
-                <a id="tel" href="tel:0451-25 35 70"><i class="phone"></i>0451-25 35 70</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480489/Meny_Hassleholm.pdf?TS=636752084048788807"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                            <li id="tis"></li><ul>16:00-22:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:00</ul><br>
-                            <li id="tor"></li><ul>16:00-23:00</ul><br>
-                            <li id="fre"></li><ul>16:00-01:00</ul><br>
-                            <li id="lör"></li><ul>14:00-01:00</ul><br>
-                            <li id="sön"></li><ul>14:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-             <div class="places" id="Borås"><div>
-                <h2>BISHOPS ARMS Borås</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Stora Brogatan 3</a>
-                <a id="tel" href="tel:033-10 15 90"><i class="phone"></i>033-10 15 90</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480484/Meny_Boras.pdf?TS=636797918756234653"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>17:00-23:00</ul><br>
-                            <li id="tis"></li><ul>17:00-23:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:00</ul><br>
-                            <li id="tor"></li><ul>16:00-23:00</ul><br>
-                            <li id="fre"></li><ul>15:00-01:00</ul><br>
-                            <li id="lör"></li><ul>12:00-01:00</ul><br>
-                            <li id="sön"></li><ul>17:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-             <div class="places" id="Skövde"><div>
-                <h2>BISHOPS ARMS Skövde</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Hertig Johans Torg 4</a>
-                <a id="tel" href="tel:0500-41 01 22"><i class="phone"></i>0500-41 01 22</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480476/Meny_Skovde.pdf?TS=636657644533501944"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                            <li id="tis"></li><ul>16:00-22:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:00</ul><br>
-                            <li id="tor"></li><ul>16:00-23:00</ul><br>
-                            <li id="fre"></li><ul>16:00-01:00</ul><br>
-                            <li id="lör"></li><ul>12:00-01:00</ul><br>
-                            <li id="sön"></li><ul>12:00-21:30</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Umeå"><div>
-                <h2>BISHOPS ARMS Umeå</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Renmarkstorget 8</a>
-                <a id="tel" href="tel:090-10 09 90"><i class="phone"></i>090-10 09 90</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480479/Meny_Umea.pdf?TS=636844502719485719"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-00:00</ul><br>
-                            <li id="tis"></li><ul>15:00-00:00</ul><br>
-                            <li id="ons"></li><ul>15:00-01:00</ul><br>
-                            <li id="tor"></li><ul>15:00-01:00</ul><br>
-                            <li id="fre"></li><ul>14:00-02:00</ul><br>
-                            <li id="lör"></li><ul>11:00-02:00</ul><br>
-                            <li id="sön"></li><ul>12:00-00:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Skellefteå"><div>
-                    <h2>BISHOPS ARMS Skellefteå</h2><i class="arrow"></i>
-                    <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Torget 6</a>
-                    <a id="tel" href="tel:0910-21 17 60"><i class="phone"></i>0910-21 17 60</a><b></b>
-                    <section>
-                        <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                        <a id="pdf" href="https://www.bishopsarms.com/DxF-1907524/Meny_Skelleftea.pdf?TS=636827045177369319"><i class="menu"></i><h3>Meny</h3></a>
-                        <aside>
-                            <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                            <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                                <li id="tis"></li><ul>16:00-00:00</ul><br>
-                                <li id="ons"></li><ul>16:00-01:00</ul><br>
-                                <li id="tor"></li><ul>16:00-01:00</ul><br>
-                                <li id="fre"></li><ul>15:00-02:00</ul><br>
-                                <li id="lör"></li><ul>12:00-02:00</ul><br>
-                                <li id="sön"></li><ul>16:00-22:00</ul></div>
-                        </aside>
-                        <a id="facebook" href="https://www.facebook.com/TheBishopsArmsBellmansgatanStockholm"><i class="facebook"></i></a>
-                        <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                        <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                        <b></b>
-                    </section>
-            </div></div>
-            <div class="places" id="Falun"><div>
-                <h2>BISHOPS ARMS Falun</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Vattugränd 6</a>
-                <a id="tel" href="tel:023-193 00"><i class="phone"></i>023-193 00</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1480486/Meny_Falun.pdf?TS=636850374532224669"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>16:00-22:00</ul><br>
-                            <li id="tis"></li><ul>16:00-23:00</ul><br>
-                            <li id="ons"></li><ul>16:00-23:45</ul><br>
-                            <li id="tor"></li><ul>16:00-23:45</ul><br>
-                            <li id="fre"></li><ul>15:00-02:00</ul><br>
-                            <li id="lör"></li><ul>13:00-02:00</ul><br>
-                            <li id="sön"></li><ul>16:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsFalun"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-            <div class="places" id="Linköping"><div>
-                <h2>BISHOPS ARMS Linköping</h2><i class="arrow"></i>
-                <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Ågatan 27</a>
-                <a id="tel" href="tel:013-10 09 93"><i class="phone"></i>013-10 09 93</a><b></b>
-                <section>
-                    <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
-                    <a id="pdf" href="https://www.bishopsarms.com/DxF-1542346/Meny_Linkoping.pdf?TS=636802874070239242"><i class="menu"></i><h3>Meny</h3></a>
-                    <aside>
-                        <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
-                        <div><li id="mån"></li><ul>17:00-23:00</ul><br>
-                            <li id="tis"></li><ul>16:30-00:00</ul><br>
-                            <li id="ons"></li><ul>16:30-00:00</ul><br>
-                            <li id="tor"></li><ul>16:30-00:00</ul><br>
-                            <li id="fre"></li><ul>15:00-01:00</ul><br>
-                            <li id="lör"></li><ul>13:00-01:00</ul><br>
-                            <li id="sön"></li><ul>17:00-22:00</ul></div>
-                    </aside>
-                    <a id="facebook" href="https://www.facebook.com/TheBishopsArmsLinkoping"><i class="facebook"></i></a>
-                    <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
-                    <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
-                    <b></b>
-                </section>
-            </div></div>
-        </main>
-	    <footer>
-		<ul id="links">
-			<li><a href="/Om">Om oss</a></li>
-			<li><a href="/Press">Press</a></li>
-			<li><a href="/Faq">Faq</a></li>
-			<li><a href="/Privacy">Privacy Notice</a></li>
-			<li><a href="/Cookie">Cookie Policy</a></li>
-			<li><a href="/News">News</a></li>
-		</ul>
-		<ul id="social">
-			<li>
-				<a href="/instagram"><i class="icon instagram icon-2x"></i></a>
-			</li>
-			<li>
-				<a href="/facebook"><i class="icon facebook icon-2x"></i></a>
-			</li>
-		</ul>
-        </footer>
-    </div>
+        </div></div>
+        <div class="places" id="Falun"><div>
+            <h2>BISHOPS ARMS Falun</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Vattugränd 6</a>
+            <a id="tel" href="tel:023-193 00"><i class="phone"></i>023-193 00</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1480486/Meny_Falun.pdf?TS=636850374532224669"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>16:00-22:00</ul><br>
+                        <li id="tis"></li><ul>16:00-23:00</ul><br>
+                        <li id="ons"></li><ul>16:00-23:45</ul><br>
+                        <li id="tor"></li><ul>16:00-23:45</ul><br>
+                        <li id="fre"></li><ul>15:00-02:00</ul><br>
+                        <li id="lör"></li><ul>13:00-02:00</ul><br>
+                        <li id="sön"></li><ul>16:00-22:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsFalun"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+        <div class="places" id="Linköping"><div>
+            <h2>BISHOPS ARMS Linköping</h2><i class="arrow"></i>
+            <a href="https://goo.gl/maps/23bJg9d4YZy"><i class="marker"></i>Ågatan 27</a>
+            <a id="tel" href="tel:013-10 09 93"><i class="phone"></i>013-10 09 93</a><b></b>
+            <section>
+                <a id="mail" href="mailto:info@bishopsarms.com"><i class="mail"></i>info@bishopsarms.com</a>
+                <a id="pdf" href="https://www.bishopsarms.com/DxF-1542346/Meny_Linkoping.pdf?TS=636802874070239242"><i class="menu"></i><h3>Meny</h3></a>
+                <aside>
+                    <p><i class="clock"></i>Öppetider<i class="miniarrow"></i></p>
+                    <div><li id="mån"></li><ul>17:00-23:00</ul><br>
+                        <li id="tis"></li><ul>16:30-00:00</ul><br>
+                        <li id="ons"></li><ul>16:30-00:00</ul><br>
+                        <li id="tor"></li><ul>16:30-00:00</ul><br>
+                        <li id="fre"></li><ul>15:00-01:00</ul><br>
+                        <li id="lör"></li><ul>13:00-01:00</ul><br>
+                        <li id="sön"></li><ul>17:00-22:00</ul></div>
+                </aside>
+                <a id="facebook" href="https://www.facebook.com/TheBishopsArmsLinkoping"><i class="facebook"></i></a>
+                <a id="instagram" href="https://www.instagram.com/thebishopsarmsbellmansgatan/"><i class="instagram"></i></a>
+                <a id="book" href="https://bit.ly/2BfEjW0">BOKA</a>
+                <b></b>
+            </section>
+        </div></div>
+    </main>
+	<footer>
+	<ul id="links">
+		<li><a href="/Om">Om oss</a></li>
+		<li><a href="/Press">Press</a></li>
+		<li><a href="/Faq">Faq</a></li>
+		<li><a href="/Privacy">Privacy Notice</a></li>
+		<li><a href="/Cookie">Cookie Policy</a></li>
+		<li><a href="/News">News</a></li>
+	</ul>
+	<ul id="social">
+		<li>
+			<a href="/instagram"><i class="icon instagram icon-2x"></i></a>
+		</li>
+		<li>
+			<a href="/facebook"><i class="icon facebook icon-2x"></i></a>
+		</li>
+	</ul>
+    </footer>
 </body>
 </html>
