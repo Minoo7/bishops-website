@@ -114,9 +114,10 @@ div[data-u="navigator"] {
 .box > #resturanger {
     background-image: url(../images/resturang.png);
     background-position: 0% 45%;
+    background-size: 150% 100%;
 }
 .box > #jobb {
     background-image: url(../images/jobb.jpg);
     background-position: 0% 40%;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }

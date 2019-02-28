@@ -227,7 +227,7 @@ footer .facebook:before {
 /*================= Media ===================*/
 
 @media only screen and (max-width: 1200px) {
-    body {
+    #container {
         display: block !important;
         width: 940px !important;
         margin-left: auto !important;
@@ -247,7 +247,7 @@ footer .facebook:before {
 }
 
 @media only screen and (max-width: 960px) {
-    body {
+    #container {
         display: block !important;
         width: 100% !important;
         margin-left: unset !important;
