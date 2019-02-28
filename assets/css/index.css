@@ -98,26 +98,61 @@ div[data-u="navigator"] {
     -webkit-transition: all ease-in 0.25s;
 }
 .box > li > a > span {
-    width: 340px;
+    width: 280px;
     margin: auto;
     background: hsla(0,0%,100%,.95);
     color: #000;
     font-size: 1.6rem;
     font-weight: 600;
     padding: 27px 20px;
+    font-family: ekmukta;
 }
 .box > li > a:hover span {
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
     color: #c41618;
 }
-.box > #resturanger {
+.box #resturanger {
     background-image: url(../images/resturang.png);
-    background-position: 0% 45%;
-    background-size: 150% 100%;
 }
-.box > #jobb {
+.box #jobb {
     background-image: url(../images/jobb.jpg);
-    background-position: 0% 40%;
-    /*background-size: 100% 100%;*/
+    background-position: 10%;
+}
+
+/*================= Media ===================*/
+
+@media only screen and (max-width: 800px) {
+    .box > #resturanger {
+        background-position: 50% 0%;
+        background-size: 140% 100%;
+    }
+    .box a {
+        height: 320px !important;
+    }
+    .box > li > a > span {
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        display: block;
+    }
+    .box > li {
+        width: 100%;
+    }
+    .box > li > a {
+        height: 280px;
+    }
+    .box > #resturanger {
+        background-size: cover;
+        background-position: center;
+
+    }
+    .box > li > a > span {
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    
 }

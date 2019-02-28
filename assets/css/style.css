@@ -17,8 +17,8 @@ body {
 }
 
 main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
 }
 
 a {
@@ -44,8 +44,10 @@ nav {
     font-family: Alternate;
     font-size: 24px;
     letter-spacing: -1px;
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -53,13 +55,13 @@ nav a {
     list-style-type: none;
     color: #f2cb54;
     display: inline;
-    margin-left: 10%;
+    /*margin-left: 9%;*/
 }
 nav a:hover {
     border-bottom: 2px solid #cf2925;
 }
 nav a:first-child {
-    margin-left: 0px;
+    margin-left: 0px !important;
 }
 
 header img[src*="assets/images/logo.jpg"] {
@@ -103,7 +105,8 @@ footer .facebook:before {
     font-style: normal;
 }
 
- /* Resturanger */
+/* Resturanger */
+
 .places .instagram:before {
     content: "\f16d";
     font-family: fontawesome;
@@ -201,7 +204,7 @@ footer .facebook:before {
 }
 @font-face {
     font-family: icon;
-    src: url(../fonts/icon.woff)
+    src: url(../fonts/icon.woff);
 }
 @font-face {
     font-family: fontawesome;
@@ -221,37 +224,71 @@ footer .facebook:before {
 }
 @font-face {
     font-family: got;
-    src: url(../fonts/got.otf)
+    src: url(../fonts/got.otf);
+}
+
+@font-face {
+    font-family: ekmukta;
+    src: url(../fonts/ekmukta.woff2);
+    font-weight: 600;
 }
 
 /*================= Media ===================*/
 
 @media only screen and (max-width: 1200px) {
-    #container {
+    body {
         display: block !important;
         width: 940px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
     header img[src*="assets/images/logo.jpg"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 9px;
-        width: 500px !important;
-        margin-bottom: 20px;
+        width: 500px;
+        padding-left: 0px !important;
+    }
+    nav {
+        width: 500px;
+    }
+    nav a {
+        margin-left: 9%;
     }
     main {
         margin: 0 !important;
     }
 }
-
+@media only screen and (min-width: 1200px) {
+    nav {
+        width: 600px;
+    }
+    nav a {
+        margin-left: 70px;
+    }
+}
 @media only screen and (max-width: 960px) {
-    #container {
+    body {
         display: block !important;
         width: 100% !important;
         margin-left: unset !important;
         margin-right: unset !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header img {
+        width: 100% !important;
+    }
+    nav {
+        width: 100%;
+        /*padding-left: 1% !important;
+        padding-right: 1% !important*/
+    }
+    nav a {
+        margin-left: 6%;
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    nav a {
+        margin-left: 8%;
     }
 }
 
@@ -283,7 +320,8 @@ footer .facebook:before {
 @media only screen and (max-width : 768px) {}
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {}
+@media only screen and (max-width : 480px) {
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {}
