@@ -1,7 +1,7 @@
 slideshow = function() {
 
     var slideshow_options = {
-      $AutoPlay: 1,
+      //$AutoPlay: 1,
       $SlideDuration: 800,
       $SlideEasing: $Jease$.$OutQuint,
       $ArrowNavigatorOptions: {

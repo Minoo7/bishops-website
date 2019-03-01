@@ -119,6 +119,12 @@ div[data-u="navigator"] {
     background-image: url(../images/jobb.jpg);
     background-position: 10%;
 }
+.box #om {
+    background-image: url(../images/om.png);
+}
+.box #kontakt {
+    background-image: url(../images/about.jpg);
+}
 
 /*================= Media ===================*/
 
