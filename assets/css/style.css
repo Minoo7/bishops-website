@@ -41,6 +41,15 @@ ul {
     margin: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
+.active {
+    font-weight: bold !important;
+    letter-spacing: 0.5px;
+}
+
 nav {
     font-family: Alternate;
     font-size: 24px;
@@ -227,10 +236,14 @@ footer .facebook:before {
     font-family: got;
     src: url(../fonts/got.otf);
 }
-
 @font-face {
     font-family: ekmukta;
     src: url(../fonts/ekmukta.woff2);
+    font-weight: 600;
+}
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/nunito.woff2);
     font-weight: 600;
 }
 
