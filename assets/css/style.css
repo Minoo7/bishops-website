@@ -47,7 +47,10 @@ li {
 
 .active {
     font-weight: bold !important;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px !important;
+}
+.gok {
+    display: none;
 }
 
 nav {
@@ -76,10 +79,14 @@ nav a:first-child {
 
 header img[src*="assets/images/logo.jpg"] {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 9px;
     width: 600px;
+}
+header a {
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
