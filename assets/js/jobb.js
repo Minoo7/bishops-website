@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  $('li').click(function(){
+  $('#jobs li').click(function(){
 
     var tP = $(this).next('ul');
 
-    $('ul').not(tP).hide();
-    $('li').not(this).removeClass('bRed');
-    $('li').not(this).removeClass('padB');
-    $('ul').not(tP).removeClass('bRed');
+    $('#jobs ul').not(tP).hide();
+    $('#jobs li').not(this).removeClass('bRed');
+    $('#jobs li').not(this).removeClass('padB');
+    $('#jobs ul').not(tP).removeClass('bRed');
 
     tP.toggle();
     $(this).toggleClass('bRed');
@@ -19,10 +19,6 @@ $(document).ready(function(){
       }
     }, false);*/
   });
-});
-
-$(function() {
-  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
 /*jQuery.fn.mouseIsOver = function lag() {

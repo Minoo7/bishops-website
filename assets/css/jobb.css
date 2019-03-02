@@ -1,15 +1,18 @@
-/*a[href*="./jobb.html"] {
-    font-weight: bold !important;
-    letter-spacing: 0.5px;
-}*/
-
 #jobs {
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
     font-family: Nunito;
     font-size: 24px;
     color: white;
+}
+#jobs h1 {
+    margin: -0.15em auto 0.25em auto;
+    font-size: 2.2em;
+    display: block;
+    width: max-content;
+    text-shadow: -1px -1px 0 #211D1A, 1px -1px 0 #211D1A, -1px 1px 0 #211D1A, 1px 1px 0 #211D1A;
+    color: whitesmoke;
 }
 #jobs li {
     text-align: center;
@@ -41,11 +44,19 @@
     display: none;
 }
 
-
 hr {
     margin: 0;
     height: 1px;
     border: 0;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
     background: black;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#211D1A), to(#211D1A), color-stop(50%, white));
+}
+
+@media only screen and (max-width: 580px) {
+    hr {
+        width: 100%;
+    }
 }
