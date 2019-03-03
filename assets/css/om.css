@@ -4,3 +4,22 @@ video {
     margin-right: auto;
     display: block;
 }
+
+#content {
+    color: white;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+#content h3 {
+    font-family: Alternate;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#content p {
+    font-family: arial;
+}
