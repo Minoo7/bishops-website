@@ -1,13 +1,47 @@
 .numbers ul {
-    font-size: 1.17em;
+    font-size: 1.3em;
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: bold;
+    font-family: Alternate;
+    letter-spacing: 1.25px;
+    /* opacity: 0; */
+    /*transition: all ease-in 2s;
+    -webkit-transition: all 2s; */ /* Safari 3.1 to 6.0 */
+    white-space: pre;
 }
 
 .numbers {
-    width: 100%;
-    border-style: dashed;
+    width: max-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.numbers h2 {
+    font-family: futural;
+    font-size: 28px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.numbers a {
+    /* margin-left: 10px; */
+    display: block;
+    width: max-content;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+
+/*#se {
+    opacity: 0;
+    transition: all 2s;
+    -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
+/*}*/
+
+
+
+.sd {
+    opacity: 255 !important;
 }
 
 /* .numbers {

@@ -1,8 +1,8 @@
 video {
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
     display: block;
+    border: 1px solid #c41618;
 }
 
 #content {
@@ -18,8 +18,17 @@ video {
     font-family: Alternate;
     font-size: 24px;
     margin-bottom: 0;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    letter-spacing: 1px;
 }
 
 #content p {
+    margin-top: 7.5px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+#content a {
+    color:#f2cb54;
     font-family: arial;
 }
