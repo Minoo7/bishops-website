@@ -142,6 +142,7 @@ footer .facebook:before {
     content: "\f041";
 }
 .phone:before {
+    font-family: fontawesome;
     content: "\f095";
 }
 .clock:before {
@@ -301,7 +302,8 @@ footer .facebook:before {
 }
 @media only screen and (max-width: 500px) {
     header img {
-        width: 37.2% !important;
+        /* width: 37.2% !important; */
+        width: 100vw !important;
     }
     nav {
         width: 100%;
