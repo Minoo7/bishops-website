@@ -297,10 +297,11 @@ footer .facebook:before {
         margin-left: unset !important;
         margin-right: unset !important;
     }
+    
 }
 @media only screen and (max-width: 500px) {
     header img {
-        width: 100% !important;
+        width: 37.2% !important;
     }
     nav {
         width: 100%;
