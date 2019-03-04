@@ -45,6 +45,10 @@ li {
     list-style-type: none;
 }
 
+i {
+    font-style: normal;
+}
+
 .active {
     font-weight: bold !important;
     letter-spacing: 0.5px !important;
@@ -145,6 +149,7 @@ footer .facebook:before {
 }
 .arrow:before {
     content: "\f105";
+    font-family: fontawesome;
 }
 .arrowdown:before {
     content: "\f107";

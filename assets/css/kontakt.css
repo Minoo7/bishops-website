@@ -5,24 +5,17 @@
     font-weight: bold;
     font-family: Alternate;
     letter-spacing: 1.25px;
-    /* opacity: 0; */
-    /*transition: all ease-in 2s;
-    -webkit-transition: all 2s; */ /* Safari 3.1 to 6.0 */
-}
-
-.numbers {
-    /* width: max-content;
-    margin-left: 10%;
-    margin-right: 10%; */
-    color: white;
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari 3.1 to 6.0 */
 }
 
 main h1, main h2 {
-    /* margin-left: 10%;
-    margin-right: 10%; */
     color: white;
     font-family: futural;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    letter-spacing: 1px;
 }
 main h1 {
     font-size: 42px;
@@ -30,10 +23,6 @@ main h1 {
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-}
-
-.headers h2 {
-    font-size: 24px;
 }
 
 .numbers a {
@@ -45,23 +34,39 @@ main h1 {
 }
 
 .numberCon {
+    color: white;
     width: max-content;
+}
+
+.numberCon i {
+    display: block;
+    font-size: 24px;
+    margin-left: 95px;
+    margin-top: -36px;
 }
 
 .numberCon h2 {
-    /* display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: max-content; */
-    /* padding-right: auto; */
     width: max-content;
+    margin-left: auto !important;
+    margin-right: 30% !important;
     cursor: pointer;
-    /* margin-left: 25%; */
-    text-align: center;
 }
 
-.sd {
-    opacity: 255 !important;
+.fullOpacity {
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.op {
+    opacity: 0 !important;
+}
+
+.gon {
+    color: red !important;
+}
+
+.show {
+    display: block !important;
 }
 
 /* .numbers {
