@@ -27,9 +27,6 @@ main h1 {
     margin-right: auto;
     width: max-content;
 }
-main h2 {
-
-}
 
 .numbers a {
     display: block;
@@ -48,6 +45,7 @@ main h2 {
 
 .numberCon {
     overflow: hidden;
+    margin-top: -240px;
 }
 
 .line {
@@ -98,6 +96,7 @@ main h2 {
     margin: 10px 0 5px 0;
 }
 .Fcon h2 {
+    font-size: 28px;
     margin: 0;
 }
 .mail:before {
@@ -114,6 +113,32 @@ main h2 {
     padding-right: 9px;
 }
 .Fcon a {
+    font-family: nunito;
+    font-size: 16px;
+    display: block;
+    width: max-content;
+}
+.Fcon2 {
+    width: max-content;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+.Fcon2 h4 {
+    font-family: Alternate;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+.Fcon2 p {
+    font-family: nunito;
+    font-size: 16px;
+    margin: 0;
+}
+.Fcon2 i {
+    font-size: 17px !important;
+    padding-right: 9px;
+}
+.Fcon2 a {
     font-family: nunito;
     font-size: 16px;
     display: block;
