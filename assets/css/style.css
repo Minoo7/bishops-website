@@ -32,19 +32,9 @@ a {
 }
 
 footer {
-    overflow: hidden;
-}
-
-footer div {
     padding: 45px 0 10px 0;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    border-style: dashed;
-    left: auto;
-    right: auto;
-    width: 100%
+    
 }
 
 ul {
