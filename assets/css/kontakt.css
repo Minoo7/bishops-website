@@ -45,7 +45,7 @@ main h1 {
 
 .numberCon {
     overflow: hidden;
-    margin-top: -240px;
+    margin-top: -405px;
 }
 
 .line {
@@ -70,10 +70,13 @@ main h1 {
 
 .numbers h3 {
     font-size: 21px;
-    width: max-content;
-    margin: 0 30% 0px auto !important;
     display: block;
     cursor: pointer;
+    margin-left: 25%;
+}
+
+#nCon {
+    width: 227px;
 }
 
 .fullOpacity {
@@ -88,6 +91,7 @@ main h1 {
     width: max-content;
     margin-top: 2.5px;
     margin-left: 10%;
+    margin-bottom: 35px;
 }
 .Fcon h4 {
     font-family: Alternate;
@@ -97,7 +101,7 @@ main h1 {
 }
 .Fcon h2 {
     font-size: 28px;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 .mail:before {
     font-family: fontawesome-light;
@@ -118,32 +122,6 @@ main h1 {
     display: block;
     width: max-content;
 }
-.Fcon2 {
-    width: max-content;
-    margin-top: 25px;
-    margin-left: 10%;
-}
-.Fcon2 h4 {
-    font-family: Alternate;
-    letter-spacing: 1px;
-    font-size: 20px;
-    margin: 10px 0 5px 0;
-}
-.Fcon2 p {
-    font-family: nunito;
-    font-size: 16px;
-    margin: 0;
-}
-.Fcon2 i {
-    font-size: 17px !important;
-    padding-right: 9px;
-}
-.Fcon2 a {
-    font-family: nunito;
-    font-size: 16px;
-    display: block;
-    width: max-content;
-}
 
 @media only screen and (max-width: 1200px) {
     main {
@@ -152,6 +130,6 @@ main h1 {
     }
 }
 
-footer {
-    margin-top: 240px;
+.footerM {
+    margin-top: 351px;
 }
