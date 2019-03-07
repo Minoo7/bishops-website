@@ -63,7 +63,9 @@ input {
     margin-top: -25px;
     margin-left: 40%;
     display: block;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
 }
 #mån:before {
     content: "Måndag:";
@@ -108,7 +110,9 @@ input {
 }
 .places a#book {
     display: block;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     color: black;
     background-color: #f2cb54;
     font-weight: bold;

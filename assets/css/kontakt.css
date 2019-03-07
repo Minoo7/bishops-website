@@ -25,12 +25,16 @@ main h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
 }
 
 .numbers a {
     display: block;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     margin-left: 120px;
     margin-top: -30px;
     color: #f2cb54
@@ -38,7 +42,9 @@ main h1 {
 
 .numbers {
     color: white;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     float: right;
     margin-right: 10%;
 }
@@ -88,7 +94,9 @@ main h1 {
 }
 
 .Fcon {
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     margin-top: 2.5px;
     margin-left: 10%;
     margin-bottom: 35px;
@@ -120,7 +128,9 @@ main h1 {
     font-family: nunito;
     font-size: 16px;
     display: block;
-    width: max-content;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
 }
 
 .footerM {
@@ -143,7 +153,9 @@ main h1 {
         margin: 0 0 0 10%
     }
     #nCon {
-        width: max-content !important;
+        width: intrinsic !important;           /* Safari/WebKit */
+        width: -moz-max-content !important;    /* Firefox/Gecko */
+        width: -webkit-max-content !important; /* Chrome */
     }
     .numbers h3 {
         margin: 0;
