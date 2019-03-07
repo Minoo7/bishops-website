@@ -4,6 +4,9 @@ $(document).ready(function(){
         //     event.preventDefault();
         //     event.stopPropagation();   
         // });
+
+        $('footer').toggleClass('footerM');
+
         if ($('.numbers ul').eq(0).css('display') == 'none') {     
             $('.numbers i').addClass('arrowdown'); 
             $(this).off('click', showN);

@@ -123,6 +123,10 @@ main h1 {
     width: max-content;
 }
 
+.footerM {
+    margin-top: 351px;
+}
+
 @media only screen and (max-width: 1200px) {
     main {
         margin-left: 10% !important;
@@ -130,6 +134,19 @@ main h1 {
     }
 }
 
-.footerM {
-    margin-top: 351px;
+@media only screen and (max-width: 830px) {
+    .numberCon {
+        margin-top: 0;
+    }
+    .numbers {
+        float: unset;
+        margin: 0 0 0 10%
+    }
+    #nCon {
+        width: max-content !important;
+    }
+    .numbers h3 {
+        margin: 0;
+    }
+    
 }
