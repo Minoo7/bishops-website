@@ -4,7 +4,6 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 62.5%;
-    width: device-width;
 	margin: 25px 0 0 0;
     font-family: 'Raleway', sans-serif;
     background-color: #211D1A;
@@ -54,16 +53,11 @@ i {
     font-weight: bold !important;
     letter-spacing: 0.5px !important;
 }
-.gok {
-    display: none;
-}
 
 nav {
     font-family: Alternate;
     font-size: 24px;
     letter-spacing: -1px;
-    /*margin-left: 10%;
-    margin-right: 10%;*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -73,7 +67,6 @@ nav a {
     list-style-type: none;
     color: #f2cb54;
     display: inline;
-    /*margin-left: 9%;*/
 }
 nav a:hover {
     border-bottom: 2px solid #cf2925;
@@ -108,10 +101,8 @@ header a {
     font-size: 2.25em;
     color: white !important;
     margin-left: auto;
-    /*margin-top: -90px;*/
     margin-right: 13px;
     margin-bottom: 80px;
-    /*display: block;*/
 }
 
 /*================= Icons ===================*/
@@ -131,12 +122,12 @@ footer .facebook:before {
 
 /* Resturanger */
 
-.places .instagram:before {
+.places i.instagram:before {
     content: "\f16d";
     font-family: fontawesome;
     font-size: 80px;
 }
-.places .facebook:before {
+.places i.facebook:before {
     content: "\f082";
     font-size: 80px;
 }
@@ -301,7 +292,6 @@ footer .facebook:before {
         margin-left: unset !important;
         margin-right: unset !important;
     }
-    
 }
 @media only screen and (max-width: 517px) {
     header {
@@ -316,8 +306,6 @@ footer .facebook:before {
     }
     nav {
         width: 100%;
-        /*padding-left: 1% !important;
-        padding-right: 1% !important*/
     }
     nav a {
         margin-left: 6%;
@@ -329,36 +317,14 @@ footer .facebook:before {
         margin-left: 8%;
     }
 }
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
-
-/*========  Non-Mobile First Method  =========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {}
+@media only screen and (max-width: 400px) {
+    nav a {
+        margin-left: 6%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    nav a {
+        margin-left: 4%;
+        font-size: 18px;
+    }
+}

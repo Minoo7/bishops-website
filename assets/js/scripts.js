@@ -1,5 +1,4 @@
 $(function() {
-  
   for (var i = 1; i < 6; i++) {
     var x = location.pathname;
     var a = document.getElementsByTagName("a")[i]
@@ -12,15 +11,4 @@ $(function() {
       a.classList.add("active");
     }
   }
-
-  /*var Lindex =  $('nav a[href*="index"');
-  alert(Lindex)
-  if (nUrl.includes()) {
-    alert("true");
-  }
-  if (nUrl === foo ||
-      nUrl.includes(Lindex) ||
-      nUrl === baz ||
-      nUrl === pew) {
-      }*/
 });

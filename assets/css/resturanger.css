@@ -1,5 +1,6 @@
 iframe {
-    translate: unset;
+    visibility: hidden;
+    border: 0;
 }
 
 #searchbox {
@@ -53,13 +54,15 @@ input {
     padding-right: 10px;
 }
 .places h2 {
-    /* margin-left: 30px; */
+    cursor: pointer;
     font-style: italic;
     font-size: 18px;
     letter-spacing: 2px;
-    width: 350px;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
 }
-.places a#tel {
+.places .tel {
     margin-top: -25px;
     margin-left: 40%;
     display: block;
@@ -67,48 +70,48 @@ input {
     width: -moz-max-content;    /* Firefox/Gecko */
     width: -webkit-max-content; /* Chrome */
 }
-#mån:before {
+.mån:before {
     content: "Måndag:";
 }
-#tis:before {
+.tis:before {
     content: "Tisdag:";
 }
-#ons:before {
+.ons:before {
     content: "Onsdag:";
 }
-#tor:before {
+.tor:before {
     content: "Torsdag:";
 }
-#fre:before {
+.fre:before {
     content: "Fredag";
 }
-#lör:before {
+.lör:before {
     content: "Lördag:";
 }
-#sön:before {
+.sön:before {
     content: "Söndag:";
 }
-.places a#mail {
+.places .mail {
     display: block;
     margin: -25px 0 0 -1px;
     letter-spacing: 1.5px;
     height: 15px;
     width: 220px;
 }
-.places a#facebook {
+.places a.facebook {
     margin-top: 80px !important;
     display: inline-block;
     position: relative;
     top: -20px;
     height: 0px;
 }
-.places a#instagram {
+.places a.instagram {
     display: inline-block;
     position: relative;
     top: -20px;
     height: 0px;
 }
-.places a#book {
+.places a.book {
     display: block;
     width: intrinsic;           /* Safari/WebKit */
     width: -moz-max-content;    /* Firefox/Gecko */
@@ -124,7 +127,7 @@ input {
     letter-spacing: 2px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.5);
 }
-.places a#book:hover {
+.places a.book:hover {
     text-shadow: unset;
     color: #c41618;
 }
@@ -168,12 +171,19 @@ img[src="assets/images/googlemapsicon.png"] {
     font-size: 26px;
     margin: 0 0 0 36px;
 }
-.places li {
+.places li[class] {
     list-style-type: none;
-    display: inline;
+    display: block;
 }
-.places ul {
+.places li:not([class]) {
     float: right;
+    margin-top: -25px;
+}
+.line {
+    border: 0.5px solid red;
+    position: absolute;
+    width: 100%;
+    top: 956px;
 }
 .places aside {
     margin: -100px 0 0 350px;
@@ -181,7 +191,7 @@ img[src="assets/images/googlemapsicon.png"] {
     width: 210px;
     padding-bottom: 20px;
 }
-.places > div > section a#pdf {
+.places > div > section .pdf {
     position: relative;
     left: 700px;
     top: -75px;
@@ -210,10 +220,10 @@ img[src="assets/images/googlemapsicon.png"] {
     margin-right: 15px;
     font-size: 35px !important;
 }
-.mail {
+.mail-icon {
     padding-right: 8px !important;
 }
-.mail:before {
+.mail-icon:before {
     font-family: fontawesome-light;
     content: "\f0e0";
     font-size: 17px;
@@ -222,20 +232,22 @@ img[src="assets/images/googlemapsicon.png"] {
 /*================= Media ===================*/
 
 @media only screen and (max-width: 800px) {
-    .places a#tel {
+    .places .tel {
         margin-left: 0;
         margin-top: 0 !important;
     }
 }
 @media only screen and (max-width: 1200px) {
-    .places > div > section a#pdf {
+    .places > div > section .pdf {
         position: unset !important;
         margin-top: 12px;
-        width: 138px;
+        width: intrinsic;           /* Safari/WebKit */
+        width: -moz-max-content;    /* Firefox/Gecko */
+        width: -webkit-max-content; /* Chrome */
         height: 0px;
         padding-bottom: 30px !important;
     }
-    .places > div > section a#pdf > i {
+    .places > div > section .pdf > i {
         padding-right: 9px !important;
     }
     .menu:before {
@@ -253,7 +265,7 @@ img[src="assets/images/googlemapsicon.png"] {
     }
 }
 @media only screen and (min-width: 750px) {
-    .places aside div {
+    .places aside ul {
         display: unset !important;
     }
 }
@@ -264,7 +276,7 @@ img[src="assets/images/googlemapsicon.png"] {
     }
 }
 @media only screen and (max-width: 750px) {
-    .places aside div {
+    .places aside ul {
         display: none;
     }
     .places aside {
@@ -280,6 +292,10 @@ img[src="assets/images/googlemapsicon.png"] {
         margin: 0 0 0 0px !important;
         letter-spacing: 1.5px;
     }
+    .places aside p:hover {
+        text-shadow: -1px -1px 0 #211D1A, 1px -1px 0 #211D1A, -1px 1px 0 #211D1A, 1px 1px 0 #211D1A;
+        cursor: pointer;
+    }
     .miniarrow:before {
         display: unset !important;
         padding-left: 10px;
@@ -289,34 +305,34 @@ img[src="assets/images/googlemapsicon.png"] {
         padding-left: 10px;
         content: "\f0d7" !important;
     }
-    #mån:before {
+    .mån:before {
         content: "Mån:" !important;
     }
-    #tis:before {
+    .tis:before {
         content: "Tis:" !important;
     }
-    #ons:before {
+    .ons:before {
         content: "Ons:" !important;
     }
-    #tor:before {
+    .tor:before {
         content: "Tor:" !important;
     }
-    #fre:before {
+    .fre:before {
         content: "Fre" !important;
     }
-    #lör:before {
+    .lör:before {
         content: "Lör:" !important;
     }
-    #sön:before {
+    .sön:before {
         content: "Sön:" !important;
     }
-    .places #facebook {
+    .places a.facebook {
         top: -95px !important;
     }
-    .places #instagram {
+    .places a.instagram {
         top: -95px !important;
     }
-    #book {
+    .book {
         margin-top: -80px !important;
     }
 }

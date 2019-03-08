@@ -50,12 +50,6 @@
     overflow:hidden;
 }
 
-[data-u="slides"] img {
-    /*width: 79.2%;*/
-    /*width: 100%;*/
-    /*height: 580px;*/
-}
-
 div[data-u="navigator"] {
     position: absolute;
     bottom: 12px;
@@ -158,7 +152,4 @@ div[data-u="navigator"] {
     .box > li > a > span {
         width: 280px;
     }
-}
-@media only screen and (max-width: 420px) {
-    
 }

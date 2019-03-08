@@ -16,9 +16,13 @@
     text-shadow: -1px -1px 0 #211D1A, 1px -1px 0 #211D1A, -1px 1px 0 #211D1A, 1px 1px 0 #211D1A;
     color: whitesmoke;
 }
-#jobs li {
+#jobs h2 {
     text-align: center;
     padding: 25px 0;
+    display: list-item;
+    margin: 0;
+    font-size: 24px;
+    list-style-type: none;
 }
 .bRed {
     background: linear-gradient(to right, rgba(196,22,24,0) 0%, rgba(196, 22, 24, 0.5) 25%, rgba(196,22,24,0) 0%, rgba(196,22,24,0.5) 0%, rgba(196,22,24,0.5) 75%, rgba(196,22,24,0) 100%);
@@ -32,7 +36,7 @@
 .padB {
     padding-bottom: 0 !important;
 }
-#jobs li:hover {
+#jobs h2:hover {
     cursor: pointer;
     background: linear-gradient(to right, rgba(196,22,24,0) 0%, rgba(196, 22, 24, 0.5) 25%, rgba(196,22,24,0) 0%, rgba(196,22,24,0.5) 0%, rgba(196,22,24,0.5) 75%, rgba(196,22,24,0) 100%);
 }
@@ -40,9 +44,8 @@
     font-size: 18px;
     margin: 0 10%;
     padding: 1em 0;
-    /*cursor: text;*/
 }
-#jobs ul {
+#jobs div {
     display: none;
 }
 
@@ -53,8 +56,9 @@ hr {
     width: 580px;
     margin-left: auto;
     margin-right: auto;
-    background: black;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#211D1A), to(#211D1A), color-stop(50%, white));
+    background: -moz-linear-gradient(0deg, #211D1A, white, #211D1A) !important;
+
 }
 
 @media only screen and (max-width: 580px) {

@@ -1,4 +1,4 @@
-.numbers ul {
+.numbers li {
     font-size: 1.3em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -89,6 +89,10 @@ main h1 {
     opacity: 1 !important;
 }
 
+.numberCon ul {
+    list-style-type: none;
+}
+
 .show {
     display: block !important;
 }
@@ -159,6 +163,5 @@ main h1 {
     }
     .numbers h3 {
         margin: 0;
-    }
-    
+    }  
 }
