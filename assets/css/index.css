@@ -106,8 +106,8 @@ div[data-u="navigator"] {
     -webkit-transition: all ease-in 0.25s;
     color: #c41618;
 }
-.box #resturanger {
-    background-image: url(../images/resturang.png);
+.box #restauranger {
+    background-image: url(../images/restauranger.jpg);
 }
 .box #jobb {
     background-image: url(../images/jobb.jpg);
@@ -123,7 +123,7 @@ div[data-u="navigator"] {
 /*================= Media ===================*/
 
 @media only screen and (max-width: 800px) {
-    .box > #resturanger {
+    .box > #restauranger {
         background-position: 50% 0%;
         background-size: 140% 100%;
     }
@@ -144,7 +144,7 @@ div[data-u="navigator"] {
     .box > li > a {
         height: 280px;
     }
-    .box > #resturanger {
+    .box > #restauranger {
         background-size: cover;
         background-position: center;
 
